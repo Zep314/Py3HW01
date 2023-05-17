@@ -19,8 +19,8 @@ def detect_simple(num):  # Функция определения простог�
 if __name__ == '__main__':
     n = int(input("Введите число: "))
 
-    if (n < 1) or (n > MAX_INPUT_NUMBER):
-        print(f"Вводите числа больше 0 и меньше {MAX_INPUT_NUMBER}")
+    if (n < 0) or (n > MAX_INPUT_NUMBER):
+        print(f"Вводите целые числа больше 0 и меньше {MAX_INPUT_NUMBER}")
     else:
         print(f"Число {n} - {'простое' if detect_simple(n) else 'составное'}")
 

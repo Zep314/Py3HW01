@@ -15,7 +15,7 @@ if __name__ == '__main__':
     print(f"Угадай число от {LOWER_LIMIT} до {UPPER_LIMIT}, которое я задумало")
     inp = -1
     turn_left = MAX_TRY
-    while (turn_left >= 0) and (inp != num):
+    while (turn_left >= 0) and (inp != num):  # Рабочий цикл
         inp = int(input('Введите число: '))
         if (inp < LOWER_LIMIT) or (inp > UPPER_LIMIT):
             print(f"Ошибка ввода! Вводите числа от {LOWER_LIMIT} до {UPPER_LIMIT}")
@@ -29,7 +29,7 @@ if __name__ == '__main__':
     if inp != num:
         print(f"Вы проиграли! Задуманное число было: {num}")
     else:
-        print(f"Вы выйграли! Число {num} угадано верно!")
+        print(f"Вы выиграли! Число {num} угадано верно!")
 
 # Результат работы:
 # C:\Work\python\dz3\Py3HW01\venv\Scripts\python.exe C:/Work/python/dz3/Py3HW01/task03.py
